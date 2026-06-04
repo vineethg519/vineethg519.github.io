@@ -1,600 +1,206 @@
-
-<body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vineeth | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
-      <div class="container">
-          <!-- Brand and ,toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <img src="profile.jpg" alt="" height="50px" width="40px">
-              <a id="title" class="navbar-brand page-scroll" href="#page-top">Vineeth</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right" >
-                  <li class="hidden active">
-                      <a href="#page-top"></a>
-                  </li>
-                 
-                  <li  class="">
-                      <a  class="page-scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="">
-                      <a class="page-scroll" href="#about">About</a>
-                  </li>
-               <!--    <li class="">
-                      <a class="page-scroll" href="#resume">Resume</a>
-                  </li>
-                   -->
-                  <li class="">
-                      <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-                
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">Welcome!</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Header -->
   <header>
-      <div class="container">
-          <div class="intro-text">
-           <div class="intro-lead-in">Welcome to my Website!</div>
-              <a href="#portfolio" class="page-scroll btn btn-xl">Full Stack Software Engineer</a>
-          </div>
-      </div>
+    <div class="header-content">
+      <img src="assets/images/profile.jpg" alt="Vineeth G" class="profile-img" />
+      <h1>Vineeth Gajula</h1>
+      <p>Sr Application Engineer @Capital One | AI Enthusiast | Full Stack | Java | React | Spring Boot | AWS | OCP Certified</p>
+      <a href="#portfolio" class="btn-primary">View My Work</a>
+    </div>
   </header>
 
-
-
-  <!-- Portfolio Grid Section -->
-  <section id="portfolio" class="bg-light-gray">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading"><u>Portfolio</u></h2>
-                  <h3 class="section-subheading text-muted">My work till today.</h3>
-              </div>
-          </div>
-          <div class="row">
-            
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="images/iOS/home.jpg" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Lost&Find</h4>
-                      <p class="text-muted">iOS App Developer</p>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="phoenix.JPG" class="img-responsive" alt="Project Management Collaboration Tool">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Collaboration Tool</h4>
-                    <p class="text-muted">Desktop Developer</p>
-                </div>
-            </div>
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="images/jbe.JPG" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Job Cost Estimator</h4>
-                      <p class="text-muted">Web Developer</p>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="images/ojc.JPG" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Online Java Compiler</h4>
-                      <p class="text-muted">Web Developer</p>
-                  </div>
-              </div>
-              <div id="guest" class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="images/guestbook.JPG" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Guestbook App</h4>
-                      <p class="text-muted">Web Developer</p>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="images/sockets_chat.JPG" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Chat Application</h4>
-                      <p class="text-muted">Web Developer</p>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-6 portfolio-item" id="other">
-                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="other.jpg" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Others</h4>
-                    <p class="text-muted">Web Developer</p>
-                </div>
-            </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
-      
-      <div class="container">
-          <div class="row">
-                
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading"><u>About Me</u></h2>
-                  <h3 class="section-subheading text-muted">
-                      <br><br>
-                        Quest for knowledge needs considerable persistence and an unquenchable desire to learn. I always wanted to
-                        learn and research on a higher prospective to understand the subject in-depth and to enhance my skills.
-                    I am looking for full time oppurtunities in the field of Java Software Development. 
-                    I have great amount of exposure in designing and developing Web applications and hands on experience with Java\J2EE technologies. 
-                   My consistent academic performances makes me feel confident.Progress is the
-                    essence of life and my graduate degree will surely serve the purpose.I love to solve complex technical
-                    problems that challenge my intellect and set fire to my imagination. I love to code and always will.
-                  </h3>
-                  <div id="about">
-                        <h2>- <img src="dp.jpg"  class="img-circle" alt="" height="120px" width="120px"></h2>
-                    </div>
-              </div>
-          </div>
-         
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-box">
+        <p>I am a Full Stack Software Engineer with hands-on experience in Java/J2EE, Spring Boot, React, Node.js, iOS (Swift), and cloud technologies. I love designing and developing web and mobile applications that solve real-world problems.</p>
+        <p>I am passionate about writing clean, scalable code and building products that make a difference. I am open to full-time opportunities in software engineering, full-stack development, and cloud-based application development.</p>
+        <div class="about-links">
+          <a href="https://github.com/vineethg519" target="_blank" rel="noopener" class="btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank" rel="noopener" class="btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Resume Section -->
- <!--  <section id="resume">
-  <div class="resume">
-      <h1 id="resume-head" class="section-heading"><u><b>Resume</b></u></h1>
-        <img src="images/resume.JPG"  class="image"alt="resume">
-  </div>
+  <!-- Portfolio -->
+  <section id="portfolio" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <p class="section-sub">Projects I've built — web, mobile, and desktop.</p>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Phoenix Collaboration Tool</h3>
+          <p class="domain">Desktop App · C# · .NET</p>
+          <p>A complete Windows desktop app with chat, task manager, shared calendar, and Google Drive integration. Built with AWS EC2, S3, SQL Server, and SHA-512 security.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Phoenix-Collaboration-App" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Lost &amp; Find</h3>
+          <p class="domain">iOS App · Swift · Parse SDK</p>
+          <p>An iOS mobile app built with Swift, UIKit, and Parse SDK. Stores data in MongoDB/JSON. Designed with auto-layout constraints for iPhone, iPad, and iPod.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Lost_Find_app" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Job Cost Estimator</h3>
+          <p class="domain">Web App · MEAN Stack</p>
+          <p>Estimates total cost for jobs like roofing and waterproofing. Built with Node.js, Express, RESTful APIs, EJS, and jQuery using MVC architecture.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Job-Cost-Estimator" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <h3>Online Java Compiler</h3>
+          <p class="domain">Web App · JSP · Servlets</p>
+          <p>A browser-based Java compiler where users can write, run, and generate .class files. Deployed on a J2EE application server with instant output display.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Online-Java-Compiler" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">05</div>
+          <h3>Guestbook App</h3>
+          <p class="domain">Web App · Node.js</p>
+          <p>A Node.js web application to create, edit, and save notes. Clean interface with full CRUD operations.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">06</div>
+          <h3>Chat Application</h3>
+          <p class="domain">Web App · Sockets · Node.js</p>
+          <p>A real-time chat room application where users communicate over a local server using WebSockets.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Chats-Sockets" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">07</div>
+          <h3>Dream Computers</h3>
+          <p class="domain">Web App · Node.js · NoSQL</p>
+          <p>An e-commerce site where users build custom PCs, browse pre-configured rigs, add to cart, and purchase securely. Data stored in NoSQL database.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Dream-Computers" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">08</div>
+          <h3>Online Feedback System</h3>
+          <p class="domain">Web App · PHP · HTML</p>
+          <p>A student feedback portal for professors with admin features for managing faculty, viewing results, and database maintenance. Built with PHP and MySQL.</p>
+          <div class="links">
+            <a href="https://github.com/vineethg519/Online-Feedback-System" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
   </section>
- -->
 
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">Java</span>
+        <span class="skill">Spring Boot</span>
+        <span class="skill">J2EE</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Express.js</span>
+        <span class="skill">Swift (iOS)</span>
+        <span class="skill">C#</span>
+        <span class="skill">.NET</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">HTML5 / CSS3</span>
+        <span class="skill">SQL</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">AWS (EC2, S3)</span>
+        <span class="skill">REST APIs</span>
+        <span class="skill">Socket.io</span>
+        <span class="skill">PHP</span>
+        <span class="skill">JSP / Servlets</span>
+      </div>
+    </div>
+  </section>
 
-  <!-- Clients Aside -->
- 
-
-  <section id="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading"><u>Contact me</u></h2>
-                  <h3 class="section-subheading text-muted">Send you query</h3>
-              </div>
+  <!-- Contact -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-box">
+        <p>Feel free to reach out and connect</p>
+        <form method="POST" action="https://formspree.io/mnqgverj" class="contact-form">
+          <div class="form-row">
+            <input type="text" name="Name" placeholder="Your Name *" required />
+            <input type="email" name="Email" placeholder="Your Email *" required />
           </div>
-          <div class="row">
-              <div class="col-lg-12">
-                    <form method="POST" action="https://formspree.io/mnqgverj">
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <input name ="Name" type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                              <div class="form-group">
-                                  <input name ="Email" type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                              <div class="form-group">
-                                  <input name ="Phone" type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <textarea name ="Message" class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                          </div>
-                          <div class="clearfix"></div>
-                          <div class="col-lg-12 text-center">
-                              <div id="success"></div>
-                              <button id="msg" type="submit" class="btn btn-xl">Send</button>
-                          </div>
-                          
-                      </div>
-                  </form>
-              </div>
-          </div>
-     
-      
+          <input type="tel" name="Phone" placeholder="Your Phone" />
+          <textarea name="Message" placeholder="Your Message *" rows="5" required></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+        <div class="contact-links">
+          <p><strong>GitHub:</strong> <a href="https://github.com/vineethg519" target="_blank">github.com/vineethg519</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank">linkedin.com/in/vineeth-g</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-        <div class="container-fluid" id="social">
-                <div class="row">
-                    <div class="sicon">
-            
-  <!--                       <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-                            <div class="icon-circle">
-                                <a href="https://www.facebook.com/vineet.1" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            </div>
-                        </div>
-        -->          
-            
-                  
-                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 text-center">
-                            <div class="icon-circle">
-                                <a href="https://github.com/vineethg519" class="igithub" title="Github"><i class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-                  
-                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 text-center">
-                            <div class="icon-circle">
-                                <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-            
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+    <p>© 2026 Vineeth Gajula</p>
+    <div class="footer-icons">
+      <a href="https://github.com/vineethg519" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
   </footer>
 
-  <!-- Portfolio Modals -->
-  <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-  <!-- Portfolio Modal 1 collaboration tool-->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here  -->
-                          <h2>Collaboration Tool</h2>
-                          <p class="item-intro text-muted">Windows Desktop Stand-alone Application using C# language.</p>
-                          <img class="img-responsive" src="phoenix.JPG" alt="Pheonix Tool">
-                          <p>A complete package consisting a chat tool, task manager, shared calendar and cloud service using google drive.
-						  Users can sign up and create teams so that all team members in a group can collaboratively work together. 
-						  Members has ability of one to one chat or group chat with entire team.
-I have used Socket class from .net library for communications in chat module.
- Utilized AWS EC2 instance for hosting the serve online. 
- This server handles all the client requests and responses for chatting. 
- Each user can connect to this server by a static IP which is given by Amazon. 
- All the data like chat history, messages, multimedia data is stored in Microsoft�s sql server.
- Connected the application to this using a url connection string provided by Amazon which acts as an endpoint. 
- Amazon�s S3 service is used for storing the data online securely.
- Implemented SHA512 hashing algorithm for securely storing the passwords of the users.Using Google�s oauth 2.0 allowing users to access their drive account securely. 
- Users can upload, download and delete their google drive files within the phoenix tool.
-</p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> June 2017 � Dec 2017</li>
-                              <li><strong>Role:</strong> Windows Desktop Application Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Phoenix-Collaboration-App" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 2 lost find-->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-            <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here  -->
-                          <h2>Lost&Find </h2>
-                          <p class="item-intro text-muted">iOS mobile application using swift language.</p>
-                          <img id="iosHome" class="img-responsive" src="images/iOS/home.jpg" alt="">
-                          <p>
-						  Programmed the application using swift language.
-						  Utilized libraries like Foundation, UI Kit, Message UI for designing the UI. 
-						  Used Parse SDK to store data which is a cloud based technology similar to AWS. 
-						  All the data is stored in JSON format using MongoDB.Built the application using Xcode IDE.
-						  Added constraints for the UI so that each view is scaled exactly depending on the iOS device. 
-						  Created the application universally so that it runs on iPad, iPhone and iPod.
-						  </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Jan 2017 � April 2017</li>
-                              <li><strong>Role:</strong> iOS Mobile Application Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Lost_Find_app" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 3 job cost estimator-->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Job Cost Estimator</h2>
-                          <p class="item-intro text-muted">Web Application using MEAN stack</p>
-                          <img class="img-responsive img-centered" src="images/jbe.JPG" alt="">
-                          <p>
-						  Web Application that estimates the total cost for a job like roofing, roofing and water proofing etc.
-						  Used Node.js as a platform for building the application. 
-						  Server side communicating framework used is Express.js, RESTful API to make Http requests like GET, POST etc. 
-						  and each html page designed is coupled with EJS and JQuery to provide user interaction.
-						  Follwed MVC architecture so that each view, logic and data are separately maintained to achieve flexibility.
-						 </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Sep 2016 � Dec 2016</li>
-                              <li><strong>Role:</strong> Web Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Job-Cost-Estimator" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                 </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 4 online java compiler  -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Online Java Compiler</h2>
-                          <p class="item-intro text-muted">Web Application using JSP and Servlets</p>
-                          <img class="img-responsive img-centered" src="images/ojc.JPG" alt="">
-                            <p>
-						  Web Application that acts as java compiler. Designed the text editor using HTML and CSS. Deployed the application on J2EE app server.
-						  Users can simply create java files and run the existing java files and generate .class files. Output is displayed instantly on the web browser.
-							
-						 </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Jan 2016 � May 2016</li>
-                              <li><strong>Role:</strong> Web Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Online-Java-Compiler" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                 </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 5 guest web book-->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Guest Book</h2>
-                          <p class="item-intro text-muted">Web Application using node.js</p>
-                          <img class="img-responsive img-centered" src="images/guestbook.JPG" alt="">
-                            <p>
-						  Web Application to create,edit and save notes 
-						 </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Oct 2016</li>
-                              <li><strong>Role:</strong> Web Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                 </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 6 chat application-->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Chat Application</h2>
-                          <p class="item-intro text-muted">Simple Chat Application using Sockets</p>
-                          <img class="img-responsive img-centered" src="images/sockets_chat.JPG" alt="">
-                           <p>
-						  Web Application that acts as chat room where users can chat within local server using sockets.  
-						 </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Nov 2016 </li>
-                              <li><strong>Role:</strong> Web Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Chats-Sockets" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                 </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-    <!-- Portfolio Modal 7 others-->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Dream Computers</h2>
-                          <p class="item-intro text-muted">Web application designed using node.js</p>
-                          <img class="img-responsive img-centered" src="dream.jpg" alt="">
-                           <p>
-						  Web Application for users to build their own computers. Users can choose either from pre-configured rigs or build their own.
-						  Contains gallery of high-end and low-end computers. Users has ability to add their items to cart and purchase using their credit cards.
-						  Data is stored in NoSQL Database.
-						 </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Jan 2017 - May 2017</li>
-                              <li><strong>Role:</strong> Web Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Dream-Computers" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                 </div>
-                  </div>
-              </div>
-			     <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Online Feedback System</h2>
-                          <p class="item-intro text-muted">Web application designed using HTML and PHP</p>
-                          <img class="img-responsive img-centered" src="OFS.JPG" alt="">
-                           <p>
-						  Web Application where students can give feedback to their respective professors. Added admin functionality like 
-						  manipulating faculty, viewing final feedback result, maintaining database etc. Handled server side requests using PHP.
-						 </p>
-                              <ul class="list-inline">
-                              <li><strong>Date:</strong> Nov 2016 </li>
-                              <li><strong>Role:</strong> Web Developer</li>
-                             
-                          </ul>
-                          <button type="button" class="btn btn-Success"><i class="fa fa-times"></i> <a href="https://github.com/vineethg519/Online-Feedback-System" > Go to Code</a></button>
-						  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                 </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-      </div>
-  </div>
-  <link rel="stylesheet" href="style.css">
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- jQuery Version 1.11.0 -->
-  <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
-  <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
-  <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
   <script src="script.js"></script>
-
-<span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body>
+</body>
+</html>
