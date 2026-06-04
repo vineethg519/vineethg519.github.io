@@ -117,18 +117,20 @@ header p {
 
 .btn-outline {
   background: transparent;
-  color: white;
+  color: #2563eb; 
   padding: 12px 24px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
-  border: 2px solid #3b82f6;
+  border: 2px solid #2563eb; 
   display: inline-block;
   font-size: 0.95rem;
   transition: all 0.2s;
+  cursor: pointer;
 }
+
 .btn-outline:hover {
-  background: #3b82f6;
+  background: #2563eb;
   color: white;
 }
 
@@ -222,8 +224,9 @@ header p {
   flex-wrap: wrap;
 }
 .links a {
-  background: #2563eb;
-  color: white;
+  background: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
   padding: 8px 14px;
   border-radius: 8px;
   text-decoration: none;
@@ -232,9 +235,13 @@ header p {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
-.links a:hover { background: #1d4ed8; }
+
+.links a:hover { 
+  background: #2563eb;
+  color: white;
+}
 
 /* ── SKILLS ── */
 .skills {
@@ -313,33 +320,51 @@ footer p { margin: 0 0 12px; }
 }
 .footer-icons a:hover { color: #60a5fa; }
 
-/* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
+
   .nav-links {
     display: none;
     flex-direction: column;
     gap: 0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
+    width: 100%;
     background: #111827;
-    padding: 10px 0;
-    z-index: 99;
+    padding: 6px 0 10px;
   }
-  .nav-links.open { display: flex; }
+
+  /* ← KEY FIX: use a wrapper approach instead of absolute */
+  #navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links.open {
+    display: flex;
+    width: 100%;
+    order: 3;
+  }
+
   .nav-links li a {
     display: block;
     padding: 12px 24px;
     border-bottom: 1px solid #1f2937;
   }
+
   header h1 { font-size: 1.7rem; }
   header p { font-size: 0.95rem; }
   .form-row { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   .about-links { flex-direction: column; }
   .section-title { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 40px 16px; }
+  .about-box, .contact-box { padding: 20px; }
+  .profile-img { width: 88px; height: 88px; }
 }
 
 @media (max-width: 480px) {
