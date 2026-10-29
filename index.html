@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vineeth | Portfolio</title>
+  <title>Vineeth Gajula | Software Engineer Portfolio</title>
+  <meta name="description" content="Vineeth Gajula — software engineer building Java, Spring Boot, cloud, full-stack, and AI-powered applications." />
+  <meta name="theme-color" content="#101a32" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,7 +17,7 @@
   <nav id="navbar">
     <div class="nav-container">
       <div class="nav-brand">Welcome!</div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
@@ -207,16 +209,16 @@
         <p>Feel free to reach out and connect</p>
         <form method="POST" action="https://formspree.io/mnqgverj" class="contact-form">
           <div class="form-row">
-            <input type="text" name="Name" placeholder="Your Name *" required />
-            <input type="email" name="Email" placeholder="Your Email *" required />
+            <input type="text" name="Name" placeholder="Your Name *" aria-label="Your name" autocomplete="name" required />
+            <input type="email" name="Email" placeholder="Your Email *" aria-label="Your email" autocomplete="email" required />
           </div>
-          <input type="tel" name="Phone" placeholder="Your Phone" />
-          <textarea name="Message" placeholder="Your Message *" rows="5" required></textarea>
+          <input type="tel" name="Phone" placeholder="Your Phone" aria-label="Your phone number" autocomplete="tel" />
+          <textarea name="Message" placeholder="Your Message *" aria-label="Your message" rows="5" required></textarea>
           <button type="submit" class="btn-outline">Send Message</button>
         </form>
         <div class="contact-links">
-          <p><strong>GitHub:</strong> <a href="https://github.com/vineethg519" target="_blank">github.com/vineethg519</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank">linkedin.com/in/vineeth-g</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/vineethg519" target="_blank" rel="noopener noreferrer">github.com/vineethg519</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank" rel="noopener noreferrer">linkedin.com/in/vineeth-g</a></p>
         </div>
       </div>
     </div>
@@ -225,8 +227,8 @@
   <footer>
     <p>© 2026 Vineeth Gajula</p>
     <div class="footer-icons">
-      <a href="https://github.com/vineethg519" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/vineethg519" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vineeth-g-a83a261a3/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </footer>
 
